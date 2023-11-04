@@ -12,7 +12,7 @@ public class CachedComponents : MonoBehaviour
         _cachedComponents = new Dictionary<Type, Component>(); 
     }
 
-    public new T GetComponent<T> () where T : Component
+    public T GetComponentFromRoot<T> () where T : Component
     {
         if(_cachedComponents.ContainsKey(typeof(T)))
         {
@@ -24,6 +24,25 @@ public class CachedComponents : MonoBehaviour
         {
             _cachedComponents.Add(typeof(T), component);
         } else
+        {
+            Debug.LogError("[" + this.gameObject.name + "] cant find component of type: " + typeof(T).ToString());
+        }
+        return component;
+    }
+
+    public new T GetComponent<T>() where T : Component
+    {
+        if (_cachedComponents.ContainsKey(typeof(T)))
+        {
+            return _cachedComponents[typeof(T)] as T;
+        }
+
+        var component = this.transform.GetComponent<T>();
+        if (component != null)
+        {
+            _cachedComponents.Add(typeof(T), component);
+        }
+        else
         {
             Debug.LogError("[" + this.gameObject.name + "] cant find component of type: " + typeof(T).ToString());
         }

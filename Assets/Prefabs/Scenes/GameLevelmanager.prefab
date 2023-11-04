@@ -26,6 +26,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7171593653230679661}
   - {fileID: 7171593652084164264}
@@ -45,7 +46,6 @@ GameObject:
   - component: {fileID: 7171593652084164266}
   - component: {fileID: 7171593652084164265}
   - component: {fileID: 7171593652084164278}
-  - component: {fileID: 3462463190752167111}
   m_Layer: 0
   m_Name: GameOver
   m_TagString: Untagged
@@ -63,6 +63,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7171593652705475967}
   - {fileID: 7171593653968479432}
@@ -148,22 +149,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Item: {fileID: 7171593652084164279}
---- !u!114 &3462463190752167111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7171593652084164279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9969591a5e5982a49989cd09e6279c94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CurrentScene: Level
-  _eventSystemInScene: {fileID: 0}
-  _audioListenerInScene: {fileID: 0}
-  _sceneTransition: {fileID: 0}
 --- !u!1 &7171593652705475966
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,6 +177,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7171593652084164264}
   m_RootOrder: 0
@@ -309,7 +295,6 @@ GameObject:
   - component: {fileID: 7171593652921046863}
   - component: {fileID: 7171593652921046860}
   - component: {fileID: 1232528249}
-  - component: {fileID: 1232528246}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -327,6 +312,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3696243654086939230}
   m_Father: {fileID: 7131634173305566894}
@@ -388,34 +374,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1232528246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7171593652921046861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0512967ae9095114184bf02dbbd79004, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 8013f957941c6b345a599c562dedf484, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3462463190752167111}
-        m_TargetAssemblyTypeName: SceneSwitch, Assembly-CSharp
-        m_MethodName: SwitchScene
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &7171593652928899567
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,6 +402,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7171593653230679661}
   m_RootOrder: 0
@@ -580,6 +539,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7171593652928899552}
   - {fileID: 7171593653458016864}
@@ -693,6 +653,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7171593653230679661}
   m_RootOrder: 1
@@ -827,6 +788,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7171593652084164264}
   m_RootOrder: 1
@@ -1014,6 +976,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d374029fedf739c46a15a782d4f68879, type: 3}
+--- !u!114 &7131634173305566881 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5820918029204678596, guid: d374029fedf739c46a15a782d4f68879, type: 3}
+  m_PrefabInstance: {fileID: 3616576755164467557}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7131634173305566895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9969591a5e5982a49989cd09e6279c94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &7131634173305566894 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5820918029204678603, guid: d374029fedf739c46a15a782d4f68879, type: 3}
@@ -1037,3 +1010,72 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GeneralEventToRaise: {fileID: 11400000, guid: 3b335322e362ba94c86375eb088d8725, type: 2}
+--- !u!114 &1232528247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7131634173305566895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0512967ae9095114184bf02dbbd79004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 8013f957941c6b345a599c562dedf484, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7131634173305566881}
+        m_TargetAssemblyTypeName: SceneSwitch, Assembly-CSharp
+        m_MethodName: RelodeScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1232528252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7131634173305566895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0512967ae9095114184bf02dbbd79004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: b6322b21fea3ed94cb6a124373fbc2de, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1232528251}
+        m_TargetAssemblyTypeName: GeneralEventRaiser, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1232528251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7131634173305566895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f29c7782187baf439809b4c8a5fcf09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GeneralEventToRaise: {fileID: 11400000, guid: b286b2c452ca4d94d9d8363bca3d357e, type: 2}

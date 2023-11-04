@@ -35,8 +35,15 @@ public class GameManager : Singleton<GameManager>
             case GameState.PAUSED:
                 Time.timeScale = 0f;
                 break;
+            case GameState.GAMEPLAY:
+                Time.timeScale = 1f;
+                break;
+            case GameState.OVER:
+                Time.timeScale = 0f;
+                break;
             default:
                 Time.timeScale = 1f;
+                //Cursor.visible = true;
                 break;
         }
     }
@@ -84,10 +91,13 @@ public class GameManager : Singleton<GameManager>
         TransitToState(GameState.OVER);
     }
 
+    public void GamePlayStarted()
+    {
+        TransitToState(GameState.GAMEPLAY);
+    }
+
     public void RestartGame()
     {
-        if (_currentGameState != GameState.OVER) return;
-
         _restartGameGlobalEvent.Raise();
         TransitToState(GameState.GAMEPLAY);
     }
